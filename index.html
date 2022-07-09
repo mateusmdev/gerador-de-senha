@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <div class="app">
+        <h5>Gerador de Senha</h5>
+
+        <div class="principal">
+            <div class="menu">
+                <div class="configuracao">
+                    <label for="ambos">
+                        <input type="radio" name="tipo" id="ambos" checked="true" value="AMBOS">
+                        Ambos        
+                    </label>
+
+                    <label for="numeros">
+                        <input type="radio" name="tipo" id="numeros" value="NUMEROS">
+                        Numeros
+                    </label>
+
+                    <label for="letras">
+                        <input type="radio" name="tipo" id="letras" value="LETRAS">
+                        Letra
+                    </label>
+                </div>
+
+                <div class="configuracao">
+                    <label for="especiais">
+                        <input type="checkbox" name="especiais" id="especiais" checked="true">
+                        Caracteres Especiais
+                    </label>
+
+                    <label id="qtd-label" for="quantidade">
+                        <input type="number" name="quantidade" id="quantidade" min="4" max="16" value="4">
+                        Tamanho da Senha
+                    </label>
+
+                    <label for="forma">
+                        <select name="forma" id="forma">
+                            <option value="PADRAO">Padrão</option>
+                            <option value="MAIUSCULO">Maiusculo</option>
+                            <option value="MINUSCULO">Minusculo</option>
+                        </select>
+                        Texto
+                    </label>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="botao">Gerar</a>
+        <span class="senha">...</span>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
